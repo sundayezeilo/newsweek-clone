@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.body {
+    background-color: #f4f5f6;
+}
+
+.container {
+    max-width: 1310px;
+    background-color: #fff;
+    padding: 0;
+}
+
+/* HEADER */
+
+.page-header {
+    height: 60px;
+    /* background-color: #f72210; */
+}
+
+.nav-bar {
+    height: 30px;
+}
+
+/* MAIN */
+
+
+/* COVER */
+
+.more-stories article img {
+    width: 95px;
+    height: 95px;
+}
+
+
+article img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+/* IN THE MAGAZINE */
+
+
+/* EDITOR'S PICK */
+
+
+/* FEATURED SLIDESHOWS */
+
+
+/* U.S. */
+
+
+/* World */
+
+
+/* Business */
+
+
+/* Tech & Science */
+
+
+/* Culture */
+
+
+/* Sports */
+
+
+/* Subscribe */
+
+
+/* FOOTER */
