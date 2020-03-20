@@ -16,13 +16,10 @@
 
 /* HEADER */
 
-.page-header {
+header {
     height: 60px;
-    /* background-color: #f72210; */
-}
-
-.nav-bar {
-    height: 30px;
+    /* position: fixed; */
+    background-color: #f72210;
 }
 
 /* MAIN */
