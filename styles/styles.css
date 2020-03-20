@@ -4,10 +4,12 @@
 
 .body {
     background-color: #f4f5f6;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .container {
-    /* max-width: 1310px; */
+    max-width: 1310px;
     background-color: #fff;
     /* padding: 0; */
 }
@@ -33,8 +35,33 @@
     height: 95px;
 }
 
+.more-stories h4 {
+    font-size:1.063rem;
+    line-height: 1.25rem;
+}
 
-article img {
+.more-stories p {
+    font-size:0.938rem;
+    line-height: 1.25rem;
+}
+
+.by-line img{
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+}
+
+.debate-items .vs {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #d6d6d6;
+    border-radius: 50%;
+    font: bold 14px/40px "Roboto Condensed",sans-serif;
+    margin: 0.875rem auto 1.125rem;
+}
+
+article > img {
     width: 100%;
 }
 
