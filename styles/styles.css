@@ -16,10 +16,18 @@
 
 /* HEADER */
 
-header {
-    height: 60px;
+.header-top {
     /* position: fixed; */
     background-color: #f72210;
+}
+
+.header-middle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-header .brand svg {
+    fill: white;
 }
 
 /* MAIN */
