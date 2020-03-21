@@ -4,369 +4,440 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Newsweek</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container">
-			<header class="page-header fixed-top">
-				<div class="container">
-					<div class="header-top flex-xs jc-sb ai-fe">
-						<div class="header-left">
-
-						</div>
-						<div class="header-middle">
-							<a href="" class="brand">
-								<svg x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
-									<g>
+		<header class="container fixed-top">
+			<div class="row page-header">
+				<div class="col-12 header-top flex-xs jc-sb ai-fe">
+					<div class="header-left">
+			
+					</div>
+					<div class="header-middle">
+						<a href="" class="brand">
+							<svg x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+								<g>
 									<path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
-									</g>
-								</svg>
-							</a>
-						</div>
-						<div class="header-right">
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class="col-2 flex-xs-6 flex-xs header-right">
+			
+					</div>
+				</div>
+			
+				<nav class="col-12 navbar navbar-light bg-light navbar-expand-lg">
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav page-nav">
+							<li class="navbar-item"><a class="nav-link" href="#">U.S.</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">World</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Business</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Tech &amp; Science</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Culture</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Newsgeek</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Sports</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Health</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">The Debate</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Vantage</a></li>
+							<li class="navbar-item"><a class="nav-link" href="#">Weather</a></li>
+							<li class="navbar-item">
+								<form class="form-inline ml-auto">
+									<input type="text" class="form-control mr-sm-2" placeholder="Search">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+			
+		<main class="container">
+			<div class="cover-article-section">
+				<div class="row">
+					<div class="col-md-5 col-lg cover-left">
+					<h3 class="article-title">FEATURED STORIES</h3>
 
+					<article class="card cover-left-item cover-left-item-1">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574302/eviction-notice.webp?w=397&h=265&q=90&f=0164e09f8040fd5f3d491558223333c8" alt="coronavirus"></a>
+						<a href="#"><h4>Cities Announce Moratoriums on Evictions During Coronavirus Pandemic</h4></a>
+						<p class="summary-text">"I don't agree with everything 100 percent. But you know what, we need to do something right away," Sen. Joni Ernst (R-Iowa), a member of leadership, told Newsweek. "We know that we're going to have people out of work, and we need to make sure that they're getting relief."</p>
+					</article>
+
+					<article class="card cover-left-item cover-left-item-2">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574305/voting-primaries.jpg?w=466&h=311&q=90&f=34b19d5de4630354f44dde952d06a223" alt="png"></a>
+						<a href="#"><h4>Kentucky Joins Louisiana and Georgia in Postponing Primary Election</h4></a>
+						<p class="summary-text">Kentucky Joins Louisiana and Georgia in Postponing Primary Election</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-3">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574204/vladimir-putin-russia-term-limits-constitution-protest.webp?w=397&h=265&q=90&f=30c1ceb22f7937e7b3448b2bf4776673" alt="png"></a>
+						<a href="#"><h4>Russians Send Open Letter Decrying Putin 'Coup' to Stay in Power</h4></a>
+						<p class="summary-text">Putin has officially asked the Russian Constitutional Court to approve changes that would allow him to circumvent existing term limits.</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-4">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567892/bernie-sanders-medicare-all.webp?w=397&h=265&q=90&f=e3ab54989da27e92b91f5041b720d1f1" alt="png"></a>
+						<a href="#"><h4>Is Bernie Sanders Right About Medicare For All?</h4></a>
+						<p class="summary-text">The U.S. government already owns and runs one of the most successful health care operations in the world. Here's an inside look</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-5">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567280/all-points-north-lodge.jpg?w=500&h=333&f=317680b645c813e7054428bff80f9d38" alt="png"></a>
+						<a href="#"><h4>Who Leads the Field in Dependency Treatment in 2020?</h4></a>
+						<p class="summary-text">When seeking guidance on beating an addiction, there are many things to consider. Where do you go to ensure that you will not just turn the corner, but keep carrying on down the right road for the rest of your life? Find out more.</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-6">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1562518/teach-now-2.jpg?w=500&h=333&f=7f31c4b3b8b35c9c592b5eb054f8a367" alt="png"></a>
+						<a href="#"><h4>Embark on a Career in Teaching With a Leading School</h4></a>
+						<p class="summary-text">Teachers are more in demand than ever, and the rewards for a career as an educator are numerous and generous. Find out how to get involved.</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-7">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1570615/nw-james-bond-banner-sponsored.jpg?w=500&h=333&f=547001b6968bad8dcee8cf938a4c68ed" alt="png"></a>
+						<a href="#"><h4>Newsweek James Bond Special Edition</h4></a>
+						<p class="summary-text">Agent 007 claimed a spot as the world’s coolest spy since Sean Connery brought him to life on the big screen. Explore Bond’s legacy with the Newsweek Special Edition, featuring behind-the-scenes photos from the films and your complete guide to every Bond Girl, villain and getaway car in the canon.</p>
+					</article>
+					<article class="card cover-left-item cover-left-item-8">
+						<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1568509/newsweek-amplify.png?w=500&h=333&f=98c0ebfc554597997a0de3bd6159812a" alt="png"></a>
+						<a href="#"><h4>Newsweek AMPLIFY Launches Strategic Partnership Solutions for Brands</h4></a>
+						<p class="summary-text">Newsweek AMPLIFY, the company's independent business unit, has launched a new program to empower digital brands with comprehensive content marketing and advertising strategies.</p>
+					</article>
+
+					</div>
+					<div class="col-md-7 col-lg-5 cover-middle">
+						<article class="card cover-middle-item cover-middle-item-1">
+							<h3 class="block-title">TOP STORY</h3>
+							<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1574319/coronavirus-stimulus-package-hits-snag-senate-republicans.webp?w=591&h=364&f=49d27fa12310ed641517d52e6a78750d" alt="png"></a>
+							<a href="#"><h4>Paid Sick Leave Bill to Combat Coronavirus Hits a Snag—Senate Republicans</h4></a>
+							<p class="summary-text">New York City, Seattle and Miami are some of many U.S. cities that have put a temporary halt to evictions due to financial hardships likely to be caused by the coronavirus.</p>
+						</article>
+						<h3 class="block-title">CULTURE & TRAVEL</h3>
+						<article class="row cover-middle-item cover-middle-item-1">
+							<div class="col-md-4 card">
+								<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.jpg?w=397&h=397&f=9cf3881b4e36e140889d6ef543e8c41a" alt="png"></a>
+								<a href="#"><h5>Will I Get a Refund If My Trip Is Canceled Because of the Coronavirus?</h5></a>
+								<p class="summary-text">Some insurance companies have been adjusting their policies in view of the outbreak, but travelers should check with their airlines, hotels and travel agents before filing a claim with insurers.</p>
+							</div>
+							<div class="col-md-4 card">
+								<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1572525/cul-uncharted-stadiums-banner.jpg?w=397&h=397&f=3495a77e8ac2636372c29916b1cc5779" alt="png"></a>
+								<a href="#"><h5>The Grandest Olympic Stadiums of All Time</h5></a>
+								<p class="summary-text">While the fate of the 2020 Tokyo Olympics hangs in the balance due to the coronavirus pandemic, here's a look at other cities that have succeeded in creating structures that have stood the test of time and continue to be as awe-inspiring and groundbreaking as the games themselves.</p>
+							</div>
+							<div class="col-md-4 card">
+								<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1573971/coronavirus-movies.jpg?w=397&h=397&f=1e419402fe208efa0f2bacf5cac80442" alt="png"></a>
+								<a href="#"><h5>'Outbreak' Enters Netflix's Top 10: 6 Quarantine-Ready Movies to Stream</h5></a>
+								<p class="summary-text">If you're not looking for an escapist movie to watch during the coronavirus pandemic, try one of these films streaming online.</p>
+							</div>
+						</article>
+						<div class="more-stories">
+							<h3>MORE STORIES</h3>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574294/us-army-iraq-war-isis-military.jpg?w=95&h=95&f=bad58ce92cc5f192577221ae0d05b6a7" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">U.S. Coalition to Leave Some Iraq Bases After Deadly Week of Vioelnce</a></h4>
+									<p>The U.S.-led coalition told Newsweek it "is re-positioning troops from a few smaller bases" in Iraq, where violence involving U.S. troops, militiamen and militants has recently escalated.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574299/justin-trudeau.jpg?w=95&h=95&f=2a35cde716aaf9efb416074f50237a04" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Coronavirus Concerns Close Canada's Borders, Canadians and Americans Exempt</a></h4>
+									<p>"I know this news will spark concern among Canadians traveling abroad," Justin Trudeau said. "I want to assure you that our government will not leave you unsupported."</p>
+								</div>
+							</article>
+							<article class="clearfix  more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574240/oriole-park-mlb.jpg?w=95&h=95&f=3bc810b65fb7dd64bb53139042475b05" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">New CDC Coronavirus Guidelines Could Put U.S. Sports on Hold for Two Months</a></h4>
+									<p>NBA, NHL and MLS have been suspended for a month, but the CDC guidelines urge against holding events of 50 or more people for another eight weeks.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574277/us-president-donald-trump.jpg?w=95&h=95&f=f910c8f626dd3ded8c120e054716be81" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Report Shows Trump Telling Governors to Get Respirators by 'Yourselves'</a></h4>
+									<p>Governors have been waiting for the federal government to provide them with equipment, personnel and financial aid amid the nation's coronavirus outbreak.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574110/kamala-harris.jpg?w=95&h=95&f=93a9b70e78d3ebe7201d8591f6b8abbb" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Kamala Harris Would Make the Best Vice Presidential Candidate: Poll</a></h4>
+									<p>Andrew Yang received the second-highest level of support from respondents.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574105/iran-coronavirus-ayatollah-hassan-rouhani.jpg?w=95&h=95&f=d9c023fd55255214598caecadddc9707" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Iran Senior Cleric Dies of Coronavirus, President Says Infections Peak</a></h4>
+									<p>Ayatollah Hashem Bathaei-Golpaygani was a member of the Assembly of Experts, which selects the country's supreme leader.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574186/house.jpg?w=95&h=95&f=05d0a25b64e3d92f1850f73140f17c0e" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">40 Republicans Voted Against the 'Families First' Coronavirus Response Bill</a></h4>
+									<p>"We all want to help Americans as we face the spread of coronavirus, but this complete rush job is not the way to do it," said Republican Representative Debbie Lesko.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574085/joe-biden-campaign-worker-hand-sanitizer.jpg?w=95&h=95&f=9664f0390e001840703f6fd50f10e18b" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Biden Holds Big Lead Over Sanders in Arizona Amid Uncertain Turnout: Poll</a></h4>
+									<p>The former vice president has a larger lead over the Vermont senator among state voters who have already cast their ballots.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574135/covid-19-test.jpg?w=95&h=95&f=fc341882e557da225ee3189ee5966ca4" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Massachusetts Firm Says It Has 1.5 Million Coronavirus Tests Ready to Ship</a></h4>
+									<p>Thermo Fisher Scientific said the available tests will initially be distributed to approximately 200 labs in the U.S.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574080/dead-sea-scrolls-fragment.jpg?w=95&h=95&f=04affb14ae33ae443cdd24b69a30e7a7" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">Entire Dead Sea Scroll Fragment Collection at U.S. Museum Is Fake: Experts</a></h4>
+									<p>Considered to be among the most significant archaeological finds of all time, the Dead Sea Scrolls contain some of the earliest versions of biblical texts.</p>
+								</div>
+							</article>
+							<article class="clearfix more-stories-article">
+								<div class="float-left story-image">
+									<a href="#">
+										<img class="mr-3" src="https://d.newsweek.com/en/full/1574059/disney-pixars-onward.jpg?w=95&h=95&f=cabacd797f7c54064006bf768502e459" alt="png">
+									</a>
+								</div>
+								<div>
+									<h4><a href="#">U.S. Box Office Hits 20-Year Low</a></h4>
+									<p>Movies including "Onward" and "The Hunt" only managed to gross $55.3 million over the weekend.</p>
+								</div>
+							</article>
 						</div>
 					</div>
-
-					<nav class="navbar navbar-light bg-light navbar-expand-lg justify-content-center">
-						<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarCollapse">
-							<ul class="navbar-nav">
-								<li class="navbar-item"><a class="nav-link" href="#">U.S.</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">World</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Business</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Tech &amp; Science</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Culture</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Newsgeek</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Sports</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Health</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">The Debate</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Vantage</a></li>
-								<li class="navbar-item"><a class="nav-link" href="#">Weather</a></li>
-								<li class="navbar-item">
-									<form class="form-inline ml-auto">
-										<input type="text" class="form-control mr-sm-2" placeholder="Search">
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</form>
+					<div class="col-md-12 col-lg cover-right">
+						<div class="opinion-list">
+							<h3 class="">OPINION</h3>
+							<ul class="list-unstyled opinion-links">
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/1528785/roff-new.png?w=63&h=63&f=4dc2ef8dad149bbca161552d8b875591" alt="png"></a>
+									<div class="media-body">
+										<a href="#">The Virus Is Yet Another Reason for the West to Rethink Its Relationship With China</a>
+										<p>By Nigel Farage</p>
+									</div>
+								</li>
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="png"></a>
+									<div class="media-body">
+									<a href="#">Robert Reich Coronavirus Is Revealing a Secret: America Has No Real Public Health System</a>
+										<p>By Nigel Farage</p>
+									</div>
+								</li>
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/111050/craig-considine.png?w=63&h=63&f=86981e327051b13e3771dc08bb69f7f8" alt="png"></a>
+									<div class="media-body">
+										<a href="#">Craig Considine Can Prayer Alone Stop a Pandemic? Even the Prophet Muhammad Wouldn't Agree</a>
+										<p>By Craig Considine</p>
+									</div>
+								</li>
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/1574439/dan-caldwell.png?w=63&h=63&f=9112a861ea096c0b55f6d98918261dad" alt="png"></a>										
+									<div class="media-body">
+										<a href="#">Dan Caldwell As an Iraq War Veteran, I'm Furious U.S. Troops Are Still Dying There 17 Years Later</a>
+										<p>By Dan Caldwell</p>
+									</div>
+								</li>
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/1573743/angela-hanks.png?w=63&h=63&f=5645fd958f7fe5abab54bf635fc1dcc8" alt="png"></a>											
+									<div class="media-body">
+										<a href="#">Coronavirus Is Exposing Trump's 'Strong Economy' for the Hoax It Is</a>
+										<p>By Angela Hanks</p>
+									</div>
+								</li>
+								<li class="media">
+									<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/1565352/aimee-allison.png?w=63&h=63&f=d992b291970adc50b2ef89b19cf632fa" alt="png"></a>
+									<div class="media-body">
+										<a href="#">Aimee Allison A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</a>
+										<p>By Aimee Allison</p>
+									</div>
 								</li>
 							</ul>
-						</div>
-					</nav>
-				</div>
-			</header>
-			<main>
-				<div class="cover-article-section">
-					<div class="row">
-						<div class="col-md-5 col-lg cover-left">
-						<h3 class="article-title">FEATURED STORIES</h3>
-
-						<article class="card cover-left-item cover-left-item-1">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574302/eviction-notice.webp?w=397&h=265&q=90&f=0164e09f8040fd5f3d491558223333c8" alt="coronavirus"></a>
-							<a href="#"><h4>Cities Announce Moratoriums on Evictions During Coronavirus Pandemic</h4></a>
-							<p class="summary-text">"I don't agree with everything 100 percent. But you know what, we need to do something right away," Sen. Joni Ernst (R-Iowa), a member of leadership, told Newsweek. "We know that we're going to have people out of work, and we need to make sure that they're getting relief."</p>
-						</article>
-
-						<article class="card cover-left-item cover-left-item-2">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574305/voting-primaries.jpg?w=466&h=311&q=90&f=34b19d5de4630354f44dde952d06a223" alt="png"></a>
-							<a href="#"><h4>Kentucky Joins Louisiana and Georgia in Postponing Primary Election</h4></a>
-							<p class="summary-text">Kentucky Joins Louisiana and Georgia in Postponing Primary Election</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-3">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574204/vladimir-putin-russia-term-limits-constitution-protest.webp?w=397&h=265&q=90&f=30c1ceb22f7937e7b3448b2bf4776673" alt="png"></a>
-							<a href="#"><h4>Russians Send Open Letter Decrying Putin 'Coup' to Stay in Power</h4></a>
-							<p class="summary-text">Putin has officially asked the Russian Constitutional Court to approve changes that would allow him to circumvent existing term limits.</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-4">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567892/bernie-sanders-medicare-all.webp?w=397&h=265&q=90&f=e3ab54989da27e92b91f5041b720d1f1" alt="png"></a>
-							<a href="#"><h4>Is Bernie Sanders Right About Medicare For All?</h4></a>
-							<p class="summary-text">The U.S. government already owns and runs one of the most successful health care operations in the world. Here's an inside look</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-5">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567280/all-points-north-lodge.jpg?w=500&h=333&f=317680b645c813e7054428bff80f9d38" alt="png"></a>
-							<a href="#"><h4>Who Leads the Field in Dependency Treatment in 2020?</h4></a>
-							<p class="summary-text">When seeking guidance on beating an addiction, there are many things to consider. Where do you go to ensure that you will not just turn the corner, but keep carrying on down the right road for the rest of your life? Find out more.</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-6">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1562518/teach-now-2.jpg?w=500&h=333&f=7f31c4b3b8b35c9c592b5eb054f8a367" alt="png"></a>
-							<a href="#"><h4>Embark on a Career in Teaching With a Leading School</h4></a>
-							<p class="summary-text">Teachers are more in demand than ever, and the rewards for a career as an educator are numerous and generous. Find out how to get involved.</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-7">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1570615/nw-james-bond-banner-sponsored.jpg?w=500&h=333&f=547001b6968bad8dcee8cf938a4c68ed" alt="png"></a>
-							<a href="#"><h4>Newsweek James Bond Special Edition</h4></a>
-							<p class="summary-text">Agent 007 claimed a spot as the world’s coolest spy since Sean Connery brought him to life on the big screen. Explore Bond’s legacy with the Newsweek Special Edition, featuring behind-the-scenes photos from the films and your complete guide to every Bond Girl, villain and getaway car in the canon.</p>
-						</article>
-						<article class="card cover-left-item cover-left-item-8">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1568509/newsweek-amplify.png?w=500&h=333&f=98c0ebfc554597997a0de3bd6159812a" alt="png"></a>
-							<a href="#"><h4>Newsweek AMPLIFY Launches Strategic Partnership Solutions for Brands</h4></a>
-							<p class="summary-text">Newsweek AMPLIFY, the company's independent business unit, has launched a new program to empower digital brands with comprehensive content marketing and advertising strategies.</p>
-						</article>
-
-						</div>
-						<div class="col-md-7 col-lg-5 cover-middle">
-							<article class="card cover-middle-item cover-middle-item-1">
-								<h3 class="block-title">TOP STORY</h3>
-								<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1574319/coronavirus-stimulus-package-hits-snag-senate-republicans.webp?w=591&h=364&f=49d27fa12310ed641517d52e6a78750d" alt="png"></a>
-								<a href="#"><h4>Paid Sick Leave Bill to Combat Coronavirus Hits a Snag—Senate Republicans</h4></a>
-								<p class="summary-text">New York City, Seattle and Miami are some of many U.S. cities that have put a temporary halt to evictions due to financial hardships likely to be caused by the coronavirus.</p>
-							</article>
-							<h3 class="block-title">CULTURE & TRAVEL</h3>
-							<article class="row cover-middle-item cover-middle-item-1">
-								<div class="col-md-4 card">
-									<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.jpg?w=397&h=397&f=9cf3881b4e36e140889d6ef543e8c41a" alt="png"></a>
-									<a href="#"><h5>Will I Get a Refund If My Trip Is Canceled Because of the Coronavirus?</h5></a>
-									<p class="summary-text">Some insurance companies have been adjusting their policies in view of the outbreak, but travelers should check with their airlines, hotels and travel agents before filing a claim with insurers.</p>
+							<div class="debate-items">
+								<h3>THE DEBATE</h3>
+								<div>
+									<a class="float-left m-2" href="#"><img src="https://d.newsweek.com/en/full/1572572/farage-johnson-corona.jpg?w=95&h=95&f=b1ac037a70167a44b3926d7c94876317" alt="png"></a>
+									<h4><a href="#">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</a></h4>
 								</div>
-								<div class="col-md-4 card">
-									<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1572525/cul-uncharted-stadiums-banner.jpg?w=397&h=397&f=3495a77e8ac2636372c29916b1cc5779" alt="png"></a>
-									<a href="#"><h5>The Grandest Olympic Stadiums of All Time</h5></a>
-									<p class="summary-text">While the fate of the 2020 Tokyo Olympics hangs in the balance due to the coronavirus pandemic, here's a look at other cities that have succeeded in creating structures that have stood the test of time and continue to be as awe-inspiring and groundbreaking as the games themselves.</p>
+								<div class="by-line d-flex flex-xs justify-content-between">
+									<div class="by-farage">
+										<span>By</span>
+										<a href="#">NIGEL FARAGE</a>
+									</div>
+									<a href="#"><img src="https://d.newsweek.com/en/full/1563625/nigel-farage.png?w=150&h=150&f=2ae37ecc11a3397b627c243707faa3cb" alt="png"></a>
 								</div>
-								<div class="col-md-4 card">
-									<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1573971/coronavirus-movies.jpg?w=397&h=397&f=1e419402fe208efa0f2bacf5cac80442" alt="png"></a>
-									<a href="#"><h5>'Outbreak' Enters Netflix's Top 10: 6 Quarantine-Ready Movies to Stream</h5></a>
-									<p class="summary-text">If you're not looking for an escapist movie to watch during the coronavirus pandemic, try one of these films streaming online.</p>
+								<div class="vs text-center">Vs</div>
+								<div>
+									<a class="float-left m-2" href="#"><img src="https://d.newsweek.com/en/full/1572870/coronavirus-italy.jpg?w=95&h=95&f=4936584f71fad398505b1f91cd5a9721" alt="png"></a>
+									<h4><a href="#">In This Fight Against Coronavirus, We Need to Protect Both Lives and Livelihoods</a></h4>
 								</div>
-							</article>
-							<div class="more-stories">
-								<h3>MORE STORIES</h3>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574294/us-army-iraq-war-isis-military.jpg?w=95&h=95&f=bad58ce92cc5f192577221ae0d05b6a7" alt="png">
-										</a>
+								<div class="by-line d-flex flex-xs justify-content-between">
+									<div class="by-farage">
+										<span>By</span>
+										<a href="#">ASAD HAMIR</a>
 									</div>
-									<div>
-										<h4><a href="#">U.S. Coalition to Leave Some Iraq Bases After Deadly Week of Vioelnce</a></h4>
-										<p>The U.S.-led coalition told Newsweek it "is re-positioning troops from a few smaller bases" in Iraq, where violence involving U.S. troops, militiamen and militants has recently escalated.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574299/justin-trudeau.jpg?w=95&h=95&f=2a35cde716aaf9efb416074f50237a04" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Coronavirus Concerns Close Canada's Borders, Canadians and Americans Exempt</a></h4>
-										<p>"I know this news will spark concern among Canadians traveling abroad," Justin Trudeau said. "I want to assure you that our government will not leave you unsupported."</p>
-									</div>
-								</article>
-								<article class="clearfix  more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574240/oriole-park-mlb.jpg?w=95&h=95&f=3bc810b65fb7dd64bb53139042475b05" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">New CDC Coronavirus Guidelines Could Put U.S. Sports on Hold for Two Months</a></h4>
-										<p>NBA, NHL and MLS have been suspended for a month, but the CDC guidelines urge against holding events of 50 or more people for another eight weeks.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574277/us-president-donald-trump.jpg?w=95&h=95&f=f910c8f626dd3ded8c120e054716be81" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Report Shows Trump Telling Governors to Get Respirators by 'Yourselves'</a></h4>
-										<p>Governors have been waiting for the federal government to provide them with equipment, personnel and financial aid amid the nation's coronavirus outbreak.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574110/kamala-harris.jpg?w=95&h=95&f=93a9b70e78d3ebe7201d8591f6b8abbb" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Kamala Harris Would Make the Best Vice Presidential Candidate: Poll</a></h4>
-										<p>Andrew Yang received the second-highest level of support from respondents.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574105/iran-coronavirus-ayatollah-hassan-rouhani.jpg?w=95&h=95&f=d9c023fd55255214598caecadddc9707" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Iran Senior Cleric Dies of Coronavirus, President Says Infections Peak</a></h4>
-										<p>Ayatollah Hashem Bathaei-Golpaygani was a member of the Assembly of Experts, which selects the country's supreme leader.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574186/house.jpg?w=95&h=95&f=05d0a25b64e3d92f1850f73140f17c0e" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">40 Republicans Voted Against the 'Families First' Coronavirus Response Bill</a></h4>
-										<p>"We all want to help Americans as we face the spread of coronavirus, but this complete rush job is not the way to do it," said Republican Representative Debbie Lesko.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574085/joe-biden-campaign-worker-hand-sanitizer.jpg?w=95&h=95&f=9664f0390e001840703f6fd50f10e18b" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Biden Holds Big Lead Over Sanders in Arizona Amid Uncertain Turnout: Poll</a></h4>
-										<p>The former vice president has a larger lead over the Vermont senator among state voters who have already cast their ballots.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574135/covid-19-test.jpg?w=95&h=95&f=fc341882e557da225ee3189ee5966ca4" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Massachusetts Firm Says It Has 1.5 Million Coronavirus Tests Ready to Ship</a></h4>
-										<p>Thermo Fisher Scientific said the available tests will initially be distributed to approximately 200 labs in the U.S.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574080/dead-sea-scrolls-fragment.jpg?w=95&h=95&f=04affb14ae33ae443cdd24b69a30e7a7" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">Entire Dead Sea Scroll Fragment Collection at U.S. Museum Is Fake: Experts</a></h4>
-										<p>Considered to be among the most significant archaeological finds of all time, the Dead Sea Scrolls contain some of the earliest versions of biblical texts.</p>
-									</div>
-								</article>
-								<article class="clearfix more-stories-article">
-									<div class="float-left story-image">
-										<a href="#">
-											<img class="mr-3" src="https://d.newsweek.com/en/full/1574059/disney-pixars-onward.jpg?w=95&h=95&f=cabacd797f7c54064006bf768502e459" alt="png">
-										</a>
-									</div>
-									<div>
-										<h4><a href="#">U.S. Box Office Hits 20-Year Low</a></h4>
-										<p>Movies including "Onward" and "The Hunt" only managed to gross $55.3 million over the weekend.</p>
-									</div>
-								</article>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg cover-right">
-							<div class="opinion-list">
-								<h3>OPINION</h3>
-								<ul class="list-unstyled opinion-links">
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/1528785/roff-new.png?w=63&h=63&f=4dc2ef8dad149bbca161552d8b875591" alt="png"></a>
-										<div class="media-body">
-											<a href="#">The Virus Is Yet Another Reason for the West to Rethink Its Relationship With China</a>
-											<p>By Nigel Farage</p>
+									<a href="#"><img src="https://d.newsweek.com/en/full/1572873/asad-hamir.png?w=150&h=150&f=116b04f6ce04832db4f41612232f8c29" alt="png"></a>
+								</div>
+								<div class="latest-news">
+									<h3 class="m-2">LATEST NEWS</h3>
+									<ul class="list-unstyled opion-links">
+										<li class="media">
+											<a href="#" class="m-2"><img src="https://d.newsweek.com/en/full/1573550/donald-trump.jpg?w=95&h=95&f=8ca8915cd5f3e7b617eb77a38b33d4e5" alt="png"></a>
+											<div class="media-body">
+												<a href="#">'Chinese Coronavirus'? Officials Say Trump is Stoking Anti-Asian Violence</a>
+											</div>
+										</li>
+										<li class="media">
+											<a class="m-2" href="#"><img src="https://d.newsweek.com/en/full/1575565/kenny-rogers.jpg?w=95&h=95&f=9e5d5f4a475230f2af332ad6d1e71725" alt="png"></a>
+											<div class="media-body">
+												<a href="#">World of Entertainment Pays Tribute to Kenny Rogers</a>
+											</div>
+										</li>
+										<li class="media">
+											<a href="#" class="m-2"><img src="https://d.newsweek.com/en/full/1575562/lebron-james-los-angeles-lakers.jpg?w=95&h=95&f=e4071fad0c3f3172e6d5e56e8969f3ee" alt="png"></a>
+											<div class="media-body">
+												<a href="#">Will NBA Players Be Paid During the Coronavirus Lockdown?</a>
+											</div>
+										</li>
+										<li class="media">
+											<a href="#" class="m-2"><img src="https://d.newsweek.com/en/full/1573923/mega-millions.jpg?w=95&h=95&f=46b0cc42e15f1fe6be304cbc1ad5d729" alt="png"></a>
+											<div class="media-body">
+												<a href="#">Mega Millions Results, Numbers for 3/20/20: Did Anyone Win The Jackpot?</a>
+											</div>
+										</li>
+										<li class="media">
+											<a href="#" class="m-2"><img src="https://d.newsweek.com/en/full/1575555/joe-biden.jpg?w=95&h=95&f=9a5f8300f1b157bd3fa106d3642256be" alt="png"></a>
+											<div class="media-body">
+												<a href="#">Congressional Hispanic Caucus PAC Endorses Joe Biden, Cites DACA Program</a>
+											</div>
+										</li>
+									</ul>
+									<div class="card cartoon m-2">
+										<img src="https://d.newsweek.com/en/full/1574545/ftx-trump7.jpg?w=500&h=333&f=6ccc4d7cc34a6a6a4076a06467fb6464" class="card-img-top" alt="png">
+										<div class="card-body">
+											<h4 class="card-title"><a href="#">We all know Trump will win, why not bet on it?</a></h4>
+											<p class="card-text">If you believe that you can predict the 2020 US Election, FTX, a Hong-Kong based company that imposed itself as a leading cryptocurrency trading platform, has released an innovative product that can turn your political expertise into cash.</p>
 										</div>
-									</li>
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="png"></a>
-										<div class="media-body">
-										<a href="#">Robert Reich Coronavirus Is Revealing a Secret: America Has No Real Public Health System</a>
-											<p>By Nigel Farage</p>
-										</div>
-									</li>
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/111050/craig-considine.png?w=63&h=63&f=86981e327051b13e3771dc08bb69f7f8" alt="png"></a>
-										<div class="media-body">
-											<a href="#">Craig Considine Can Prayer Alone Stop a Pandemic? Even the Prophet Muhammad Wouldn't Agree</a>
-											<p>By Craig Considine</p>
-										</div>
-									</li>
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/1574439/dan-caldwell.png?w=63&h=63&f=9112a861ea096c0b55f6d98918261dad" alt="png"></a>										
-										<div class="media-body">
-											<a href="#">Dan Caldwell As an Iraq War Veteran, I'm Furious U.S. Troops Are Still Dying There 17 Years Later</a>
-											<p>By Dan Caldwell</p>
-										</div>
-									</li>
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/1573743/angela-hanks.png?w=63&h=63&f=5645fd958f7fe5abab54bf635fc1dcc8" alt="png"></a>											
-										<div class="media-body">
-											<a href="#">Coronavirus Is Exposing Trump's 'Strong Economy' for the Hoax It Is</a>
-											<p>By Angela Hanks</p>
-										</div>
-									</li>
-									<li class="media">
-										<a class="mr-2" href="#"><img src="https://d.newsweek.com/en/full/1565352/aimee-allison.png?w=63&h=63&f=d992b291970adc50b2ef89b19cf632fa" alt="png"></a>
-										<div class="media-body">
-											<a href="#">Aimee Allison A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</a>
-											<p>By Aimee Allison</p>
-										</div>
-									</li>
-								</ul>
-								<div class="debate-items">
-									<h4>THE DEBATE</h4>
-									<div>
-										<a class="float-left mr-2" href="#"><img src="https://d.newsweek.com/en/full/1572572/farage-johnson-corona.jpg?w=95&h=95&f=b1ac037a70167a44b3926d7c94876317" alt="png"></a>
-										<h4><a href="#">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</a></h4>
 									</div>
-									<div class="by-line d-flex flex-xs justify-content-between">
-										<div class="by-farage">
-											<span>By</span>
-											<a href="#">NIGEL FARAGE</a>
+									<div class="newsletter">
+										<div class="title d-flex">
+											<span class="icon-n"></span>SIGN UP FOR OUR NEWSLETTER
 										</div>
-										<a href="#"><img src="https://d.newsweek.com/en/full/1563625/nigel-farage.png?w=150&h=150&f=2ae37ecc11a3397b627c243707faa3cb" alt="png"></a>
+										<a class="d-inline-block signup-btn" href="#">SIGN UP &gt;</a>
+										<a class="d-block" href="#">Update your preferences &raquo;</a>
 									</div>
-									<div class="vs text-center">Vs</div>
-									
-
-								</div>												
-							</div>
+									<div class="card m-2">
+										<img src="https://d.newsweek.com/en/full/1563365/american-heritage-school.jpg?w=500&h=333&f=09027b683d637126ae539ea5f9f3761f" alt="png">
+										<div class="card-body">
+											<h4 class="card-title"><a href="#">What Can A Private Education Do For Your Child?</a></h4>
+											<p class="card-text">What is the single most consequential choice you make to give your child the best possible advantage in life? If you think it’s education, read on.</p>
+										</div>
+									</div>
+									<div class="card m-2">
+										<img src="https://d.newsweek.com/en/full/1572014/worlds-best-hospitals-2020.png?w=500&h=333&f=c871e2709e79f9ba030be976797f7aa2" alt="png">
+										<div class="card-body">
+											<h4 class="card-title"><a href="#">World's Best Hospitals 2020</a></h4>
+											<p class="card-text">Newsweek partnered with Statista Inc. to rank the leading hospitals in 21 countries</p>
+										</div>
+									</div>
+								</div>
+							</div>												
 						</div>
 					</div>
 				</div>
-				<section class="magazine-section">
-
-				</section>
-				<section class="editor-pick-section">
-
-				</section>
-				<section class="slideshow-section">
-
-				</section>
-				<section class="us-section">
-
-				</section>
-				<section class="world-section">
-
-				</section>
-				<section class="business-section">
-
-				</section>
-				<section class="tech-science-section">
-
-				</section>
-				<section class="culture-section">
-
-				</section>
-				<section class="sports-section">
-
-				</section>
-				<section class="subscribe-section">
-
-				</section>
-			</main>
-			<footer>
-			<div class="footer-heading">
-
 			</div>
-			<div class="footer-nav">
+			<section class="magazine-section">
 
-			</div>
-			</footer>
+			</section>
+			<section class="editor-pick-section">
+
+			</section>
+			<section class="slideshow-section">
+
+			</section>
+			<section class="us-section">
+
+			</section>
+			<section class="world-section">
+
+			</section>
+			<section class="business-section">
+
+			</section>
+			<section class="tech-science-section">
+
+			</section>
+			<section class="culture-section">
+
+			</section>
+			<section class="sports-section">
+
+			</section>
+			<section class="subscribe-section">
+
+			</section>
+		</main>
+
+		<footer class="container">
+		<div class="footer-heading">
+
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<div class="footer-nav">
+
+		</div>
+		</footer>
+		<script src="bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</body>
 </html>
