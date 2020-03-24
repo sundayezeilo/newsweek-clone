@@ -90,18 +90,19 @@ nav {
   display: none;
 }
 
-/* ul.page-nav {
+ul.page-nav {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-li .nav-link {
+li.nav-links {
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
+  border-right: 1px solid #666;
   font-family: "Roboto Condensed", sans-serif;
-} */
+} 
 
 /* MAIN */
 
