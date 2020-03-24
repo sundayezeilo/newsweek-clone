@@ -102,7 +102,7 @@ li.nav-links {
   font-weight: bold;
   border-right: 1px solid #666;
   font-family: "Roboto Condensed", sans-serif;
-} 
+}
 
 /* MAIN */
 
@@ -199,6 +199,12 @@ img {
 /* FEATURED SLIDESHOWS */
 
 /* U.S. */
+
+.us-section .side-article img,
+.world-section .side-article img {
+  width: 95px;
+  height: 95px;
+}
 
 /* World */
 
