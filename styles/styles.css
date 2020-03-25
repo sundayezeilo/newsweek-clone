@@ -1,6 +1,6 @@
-* {
-  /* border: 1px solid red; */
-}
+/* * {
+  border: 1px solid red;
+} */
 
 .body {
   background-color: #f4f5f6;
@@ -27,6 +27,7 @@
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 317px;
 }
 
 .header-left {
@@ -60,18 +61,70 @@
   font-weight: bold;
 }
 
+.signin-btn, .menu-bar {
+  color: #fff;
+}
+
+.signin-btn:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 481px) {
+  .signin-btn {
+    display: block;
+  }
+}
+
 .subscribe-btn {
   background-color: white;
   color: #f72210;
 }
 
+.subscribe-btn:hover {
+  color: #f72210;
+}
+
+.header-left {
+  display: none;
+}
+
+.header-left a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 401px) {
+  .header-left {
+    display: block;
+  }
+}
+
 .signin-btn,
 .subscribe-btn,
-.menu-bar {
+.menu-icon {
   position: relative;
   font: bold 14px/14px "Roboto Condensed", sans-serif;
   display: inline-block;
   padding: 6px 3px;
+}
+
+/* 
+.menu-icon  */
+
+.menu-icon {
+  display: inline-block;
+  font-size: 26px;
+  color: #d6d6d6;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a:hover {
+  text-decoration: none;
+  
 }
 
 /* .header-middle svg {
