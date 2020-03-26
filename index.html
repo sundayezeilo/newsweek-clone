@@ -4,11 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Newsweek</title>
+		<link rel='icon' href='https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png' type='image/png'/>
 		<link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	</head>
 	<body>
 		<header>	
@@ -36,20 +37,20 @@
 					<span class="menu-icon d-lg-none"><i class="fa fa-bars" aria-hidden="true"></i></span>
 				</div>
 			</div>
-			<nav class="d-none d-lg-block position-relative mt-0">
+			<nav class="d-none d-lg-block position-relative mt-0 nav-bar">
 				<div class="header-bottom d-lg-block"></div>	
 				<ul class="page-nav list-unstyled d-lg-inline">
-					<li class="nav-links d-inline"><a href="#">U.S.</a></li>
-					<li class="nav-links d-inline"><a href="#">World</a></li>
-					<li class="nav-links d-inline"><a href="#">Business</a></li>
-					<li class="nav-links d-inline"><a href="#">Tech &amp; Science</a></li>
-					<li class="nav-links d-inline"><a href="#">Culture</a></li>
-					<li class="nav-links d-inline"><a href="#">Newsgeek</a></li>
-					<li class="nav-links d-inline"><a href="#">Sports</a></li>
-					<li class="nav-links d-inline"><a href="#">Health</a></li>
-					<li class="nav-links d-inline"><a href="#">The Debate</a></li>
-					<li class="nav-links d-inline"><a href="#">Vantage</a></li>
-					<li class="nav-links d-inline"><a href="#">Weather</a></li>
+					<li class="nav-item d-inline"><a href="#">U.S.</a></li>
+					<li class="nav-item d-inline"><a href="#">World</a></li>
+					<li class="nav-item d-inline"><a href="#">Business</a></li>
+					<li class="nav-item d-inline"><a href="#">Tech &amp; Science</a></li>
+					<li class="nav-item d-inline"><a href="#">Culture</a></li>
+					<li class="nav-item d-inline"><a href="#">Newsgeek</a></li>
+					<li class="nav-item d-inline"><a href="#">Sports</a></li>
+					<li class="nav-item d-inline"><a href="#">Health</a></li>
+					<li class="nav-item d-inline"><a href="#">The Debate</a></li>
+					<li class="nav-item d-inline"><a href="#">Vantage</a></li>
+					<li class="nav-item d-inline"><a href="#">Weather</a></li>
 				</ul>
 				<form class="d-inline ml-auto">
 					<input type="text" id="search-box" class="search-box" placeholder="Search">
@@ -61,56 +62,66 @@
 			<main class="cover-article-section">
 				<div class="row">
 					<div class="col-md-5 col-lg cover-left">
-						<h3 class="article-title">FEATURED STORIES</h3>
-	
-						<article class="card cover-left-item cover-left-item-1">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574302/eviction-notice.webp?w=397&h=265&q=90&f=0164e09f8040fd5f3d491558223333c8" alt="coronavirus"></a>
+						<h3 class="block-title">FEATURED STORIES</h3>	
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a class="cat-title" href="#">TECH & SCIENCE</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574302/eviction-notice.webp?w=397&h=265&q=90&f=0164e09f8040fd5f3d491558223333c8" alt="coronavirus"></a>	
+							</div>
 							<div class="card-body">
 								<h3 class="card-title"><a href="#">Cities Announce Moratoriums on Evictions During Coronavirus Pandemic</a></h3>
 								<p class="card-text summary-text">"I don't agree with everything 100 percent. But you know what, we need to do something right away," Sen. Joni Ernst (R-Iowa), a member of leadership, told Newsweek. "We know that we're going to have people out of work, and we need to make sure that they're getting relief."</p>
 							</div>
 						</article>		
-						<article class="card cover-left-item cover-left-item-2">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574305/voting-primaries.jpg?w=466&h=311&q=90&f=34b19d5de4630354f44dde952d06a223" alt="png"></a>
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a href="#" class="cat-title">U.S.</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574305/voting-primaries.jpg?w=466&h=311&q=90&f=34b19d5de4630354f44dde952d06a223" alt="png"></a>
+							</div>
 							<div class="card-body">
 								<h3 class="card-title"><a href="#">Kentucky Joins Louisiana and Georgia in Postponing Primary Election</a></h3>
 								<p class="card-text summary-text">Kentucky Joins Louisiana and Georgia in Postponing Primary Election</p>
 							</div>
 						</article>
-						<article class="card cover-left-item cover-left-item-3">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574204/vladimir-putin-russia-term-limits-constitution-protest.webp?w=397&h=265&q=90&f=30c1ceb22f7937e7b3448b2bf4776673" alt="png"></a>
-							<div class="card-body">
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a class="cat-title" href="#">WORLD</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574204/vladimir-putin-russia-term-limits-constitution-protest.webp?w=397&h=265&q=90&f=30c1ceb22f7937e7b3448b2bf4776673" alt="png"></a>
+							</div>
+								<div class="card-body">
 								<h3 class="card-title"><a href="#">Russians Send Open Letter Decrying Putin 'Coup' to Stay in Power</a></h3>
 								<p class="card-text summary-text">Putin has officially asked the Russian Constitutional Court to approve changes that would allow him to circumvent existing term limits.</p>
 							</div>
 						</article>
-						<article class="card cover-left-item cover-left-item-4">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567892/bernie-sanders-medicare-all.webp?w=397&h=265&q=90&f=e3ab54989da27e92b91f5041b720d1f1" alt="png"></a>
-							<div class="card-body">
-								<h3 class="card-title"><a href="#">Is Bernie Sanders Right About Medicare For All?</a></h3>
-								<p class="card-text summary-text">The U.S. government already owns and runs one of the most successful health care operations in the world. Here's an inside look</p>
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a class="cat-title sponsored" href="#">SPONSORED INSIGHT</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567280/all-points-north-lodge.jpg?w=500&h=333&f=317680b645c813e7054428bff80f9d38" alt="png"></a>
 							</div>
-						</article>
-						<article class="card cover-left-item cover-left-item-5">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1567280/all-points-north-lodge.jpg?w=500&h=333&f=317680b645c813e7054428bff80f9d38" alt="png"></a>
-							<div class="card-body">
+								<div class="card-body">
 								<h3 class="card-title"><a href="#">Who Leads the Field in Dependency Treatment in 2020?</a></h3>
 								<p class="card-text summary-text">When seeking guidance on beating an addiction, there are many things to consider. Where do you go to ensure that you will not just turn the corner, but keep carrying on down the right road for the rest of your life? Find out more.</p>
 							</div>
 						</article>
-						<article class="card cover-left-item cover-left-item-6">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1562518/teach-now-2.jpg?w=500&h=333&f=7f31c4b3b8b35c9c592b5eb054f8a367" alt="png"></a>
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a class="cat-title sponsored" href="#">SPONSORED INSIGHT</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1562518/teach-now-2.jpg?w=500&h=333&f=7f31c4b3b8b35c9c592b5eb054f8a367" alt="png"></a>
+							</div>
 							<div class="card-body">
 								<h3 class="card-title"><a href="#">Embark on a Career in Teaching With a Leading School</a></h3>
 								<p class="card-text summary-text">Teachers are more in demand than ever, and the rewards for a career as an educator are numerous and generous. Find out how to get involved.</p>
 							</div>
 						</article>
-						<article class="card cover-left-item cover-left-item-7">
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1570615/nw-james-bond-banner-sponsored.jpg?w=500&h=333&f=547001b6968bad8dcee8cf938a4c68ed" alt="png"></a>
+						<article class="card featured-story">
+							<div class="category position-relative">
+								<a class="cat-title sponsored" href="#">SPONSORED INSIGHT</a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1570615/nw-james-bond-banner-sponsored.jpg?w=500&h=333&f=547001b6968bad8dcee8cf938a4c68ed" alt="png"></a>
+							</div>
 							<h3 class="card-title"><a href="">Newsweek James Bond Special Edition</a></h3>
 							<p class="card-text summary-text">Agent 007 claimed a spot as the world’s coolest spy since Sean Connery brought him to life on the big screen. Explore Bond’s legacy with the Newsweek Special Edition, featuring behind-the-scenes photos from the films and your complete guide to every Bond Girl, villain and getaway car in the canon.</p>
 						</article>
-						<article class="card cover-left-item cover-left-item-8">
+						<article class="card featured-story">
 							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1568509/newsweek-amplify.png?w=500&h=333&f=98c0ebfc554597997a0de3bd6159812a" alt="png"></a>
 							<div class="card-body">
 								<h3 class="card-title"><a href="#">Newsweek AMPLIFY Launches Strategic Partnership Solutions for Brands</a></h3>
@@ -119,18 +130,27 @@
 						</article>	
 					</div>
 					<div class="col-md-7 col-lg-5 cover-middle">
-						<article class="card cover-middle-item cover-middle-item-1">
-							<h3 class="block-title">TOP STORY</h3>
-							<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574319/coronavirus-stimulus-package-hits-snag-senate-republicans.webp?w=591&h=364&f=49d27fa12310ed641517d52e6a78750d" alt="png"></a>
-							<div class="card-body">
-								<h3 class="card-title"><a href="#">Paid Sick Leave Bill to Combat Coronavirus Hits a Snag—Senate Republicans</a></h3>
-								<p class="card-text summary-text">New York City, Seattle and Miami are some of many U.S. cities that have put a temporary halt to evictions due to financial hardships likely to be caused by the coronavirus.</p>
-							</div>
-						</article>
+						<div class="top-story">
+							<article class="card top-story-article-1">
+								<h3 class="block-title">TOP STORY</h3>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1574319/coronavirus-stimulus-package-hits-snag-senate-republicans.webp?w=591&h=364&f=49d27fa12310ed641517d52e6a78750d" alt="png"></a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="#">Paid Sick Leave Bill to Combat Coronavirus Hits a Snag—Senate Republicans</a></h3>
+									<p class="card-text summary-text">New York City, Seattle and Miami are some of many U.S. cities that have put a temporary halt to evictions due to financial hardships likely to be caused by the coronavirus.</p>
+								</div>
+								<div class="media top-story-article-2">
+									<img src="https://d.newsweek.com/en/full/1575538/new-york-empty.jpg?w=95&h=95&f=c1d5bf1ddc382f20f99acfb8d074c000" alt="png">
+									<div class="media-body">
+										<h5><a href="#">Governors Lockdown a Quarter of the U.S. Economy as America Hurtles Towards Recession</a></h5>
+										<p>Three of the states that have locked down—California, New York and Illinois—have the fifth-largest, 12th-largest and 22nd-largest economies in the world.</p>
+									</div>
+								</div>
+							</article>
+						</div>
 						<h3 class="block-title">CULTURE & TRAVEL</h3>
-						<article class="row cover-middle-item cover-middle-item-1">
+						<article class="row culture-and-travel">
 							<div class="col-md-4 card">
-								<a href=""><img class="card-img-top" src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.jpg?w=397&h=397&f=9cf3881b4e36e140889d6ef543e8c41a" alt="png"></a>
+								<a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.jpg?w=397&h=397&f=9cf3881b4e36e140889d6ef543e8c41a" alt="png"></a>
 								<div class="card-body">
 									<h5 class="card-title"><a href="#">Will I Get a Refund If My Trip Is Canceled Because of the Coronavirus?</a></h5>
 									<p class="card-text summary-text">Some insurance companies have been adjusting their policies in view of the outbreak, but travelers should check with their airlines, hotels and travel agents before filing a claim with insurers.</p>
@@ -152,7 +172,7 @@
 							</div>
 						</article>
 						<div class="more-stories">
-							<h3>MORE STORIES</h3>
+							<h3 class="block-title">MORE STORIES</h3>
 							<article class="clearfix more-stories-article">
 								<div class="float-left story-image">
 									<a href="#"><img src="https://d.newsweek.com/en/full/1574294/us-army-iraq-war-isis-military.jpg?w=95&h=95&f=bad58ce92cc5f192577221ae0d05b6a7" alt="png"></a>
@@ -256,7 +276,7 @@
 					</div>
 					<div class="col-md-12 col-lg cover-right">
 						<div class="opinion-list">
-							<h3 class=""><a href="#">OPINION</a></h3>
+							<h3 class="block-title"><a href="#">OPINION</a></h3>
 							<ul class="list-unstyled opinion-links">
 								<li class="media">
 									<a href="#"><img src="https://d.newsweek.com/en/full/1528785/roff-new.png?w=63&h=63&f=4dc2ef8dad149bbca161552d8b875591" alt="png"></a>
@@ -302,7 +322,7 @@
 								</li>
 							</ul>
 							<div class="debate-items">
-								<h3>THE DEBATE</h3>
+								<h3 class="block-title">THE DEBATE</h3>
 								<div>
 									<a class="float-left m-2" href="#"><img src="https://d.newsweek.com/en/full/1572572/farage-johnson-corona.jpg?w=95&h=95&f=b1ac037a70167a44b3926d7c94876317" alt="png"></a>
 									<h4><a href="#">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</a></h4>
@@ -327,7 +347,7 @@
 									<a href="#"><img src="https://d.newsweek.com/en/full/1572873/asad-hamir.png?w=150&h=150&f=116b04f6ce04832db4f41612232f8c29" alt="png"></a>
 								</div>
 								<div class="latest-news">
-									<h3>LATEST NEWS</h3>
+									<h3 class="block-title">LATEST NEWS</h3>
 									<ul class="list-unstyled opinion-links">
 										<li class="media">
 											<a href="#"><img src="https://d.newsweek.com/en/full/1573550/donald-trump.jpg?w=95&h=95&f=8ca8915cd5f3e7b617eb77a38b33d4e5" alt="png"></a>
@@ -351,7 +371,10 @@
 										</li>
 									</ul>
 									<div class="card cartoon">
-										<img src="https://d.newsweek.com/en/full/1574545/ftx-trump7.jpg?w=500&h=333&f=6ccc4d7cc34a6a6a4076a06467fb6464" class="card-img-top" alt="png">
+										<div class="category position-relative">
+											<a class="cat-title sponsored" href="#">SPONSORED INSIGHT</a>
+											<a href="#"><img src="https://d.newsweek.com/en/full/1574545/ftx-trump7.jpg?w=500&h=333&f=6ccc4d7cc34a6a6a4076a06467fb6464" class="card-img-top" alt="png"></a>
+										</div>
 										<div class="card-body">
 											<h4 class="card-title"><a href="#">We all know Trump will win, why not bet on it?</a></h4>
 											<p class="card-text">If you believe that you can predict the 2020 US Election, FTX, a Hong-Kong based company that imposed itself as a leading cryptocurrency trading platform, has released an innovative product that can turn your political expertise into cash.</p>
@@ -365,7 +388,10 @@
 										<a class="d-block" href="#">Update your preferences &raquo;</a>
 									</div>
 									<div class="card">
-										<img src="https://d.newsweek.com/en/full/1563365/american-heritage-school.jpg?w=500&h=333&f=09027b683d637126ae539ea5f9f3761f" alt="png">
+										<div class="category position-relative">
+											<a class="cat-title sponsored" href="#">SPONSORED INSIGHT</a>
+											<a href="#"><img src="https://d.newsweek.com/en/full/1563365/american-heritage-school.jpg?w=500&h=333&f=09027b683d637126ae539ea5f9f3761f" alt="png"></a>
+										</div>
 										<div class="card-body">
 											<h4 class="card-title"><a href="#">What Can A Private Education Do For Your Child?</a></h4>
 											<p class="card-text">What is the single most consequential choice you make to give your child the best possible advantage in life? If you think it’s education, read on.</p>
