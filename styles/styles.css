@@ -46,6 +46,8 @@ a {
 .container,
 header {
   max-width: 1310px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #fff;
 }
 
@@ -521,10 +523,13 @@ img {
   margin-right: 10px;
 }
 
-.magazine-section,
-.editors-pick-section {
+section {
   padding-top: 10px;
   border-top: 1px solid #e6e6e6;
+}
+
+section:first-of-type {
+  border-top: none;
 }
 
 .magazine-content img {
