@@ -193,9 +193,10 @@ header {
 /* NAV BAR */
 
 nav {
+  height: 60px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 4px;
   border-bottom: 2px solid #f4f5f6;
 }
 
@@ -255,10 +256,10 @@ li.nav-item:first-of-type {
   display: block;
   position: absolute;
   top: 0;
-  width: calc(100% - 180px);
+  width: calc(100% - 102px);
   outline: none;
   border: none;
-  right: 180px;
+  right: 102px;
   transition: 0.4s;
 }
 
@@ -520,16 +521,16 @@ img {
   margin-right: 10px;
 }
 
-.magazine-content {
+.magazine-section,
+.editors-pick-section {
   padding-top: 10px;
   border-top: 1px solid #e6e6e6;
 }
 
-/* .magazine-content div:first-of-type {
-  position: relative;
-  margin-top: 0;
-} */
-
+.magazine-content img {
+  width: 100%;
+  height: 100%;
+}
 /* EDITOR'S PICK */
 
 /* FEATURED SLIDESHOWS */
@@ -553,5 +554,13 @@ img {
 /* Sports */
 
 /* Subscribe */
+.signup-text::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+}
 
 /* FOOTER */
