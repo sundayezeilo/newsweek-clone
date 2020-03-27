@@ -195,7 +195,7 @@ header {
 nav {
   width: 100%;
   margin: 0 auto;
-  padding: 15px 0;
+  padding-top: 15px;
   border-bottom: 2px solid #f4f5f6;
 }
 
@@ -220,8 +220,8 @@ nav {
 
 ul.page-nav {
   display: flex;
-  justify-content: center;
   width: 100%;
+  justify-content: center;
 }
 
 li.nav-item {
@@ -269,7 +269,17 @@ li.nav-item:first-of-type {
 /* MAIN */
 
 main {
-  padding-top: 40px;
+  padding-top: 20px;
+}
+
+.cartoon,
+.featured-story,
+.top-story-article-1 {
+  padding-bottom: 20px;
+}
+
+.sponsored-article {
+  padding-bottom: 30px;
 }
 
 /* COVER */
@@ -311,12 +321,6 @@ img {
   font: 1.063rem/1.313rem "Roboto Condensed", sans-serif;
 }
 
-.cover-left article,
-.cover-middle article,
-.cover-right article {
-  padding-bottom: 10px;
-}
-
 .card {
   border: none;
 }
@@ -333,7 +337,8 @@ img {
 }
 
 .media {
-  padding-top: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -342,8 +347,14 @@ img {
   border: 1px solid #e6e6e6;
 }
 
-.opinion-links li:first-of-type {
+.more-stories .media:first-of-type {
+  padding-top: 0;
+}
+
+.opinion-links li:first-of-type,
+.latest-news-links li:first-of-type {
   border-top: none;
+  padding-top: 0;
 }
 
 .card-text,
@@ -477,7 +488,7 @@ img {
 
 .newsletter-signup {
   max-width: 300px;
-  margin: 30px auto;
+  margin: 0 auto 30px;
   padding: 20px;
   border: 1px solid #e5e5e5;
   background-color: #f4f5f6;
@@ -508,6 +519,16 @@ img {
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
   margin-right: 10px;
 }
+
+.magazine-content {
+  padding-top: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* .magazine-content div:first-of-type {
+  position: relative;
+  margin-top: 0;
+} */
 
 /* EDITOR'S PICK */
 
