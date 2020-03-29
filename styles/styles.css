@@ -6,7 +6,8 @@ body {
   background-color: #f4f5f6;
   font-size: 0.938rem;
   line-height: 1.25rem;
-  min-width: 317px;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -208,6 +209,16 @@ a {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .signin-btn {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .more-stories {
+    position: sticky;
+    top: -90%;
+  }
 }
 
 /* NAV BAR */
@@ -221,26 +232,18 @@ nav {
   border-bottom: 2px solid #f4f5f6;
 }
 
-ul.nav-list {
-  display: flex;
-  justify-content: center;
-}
-
 li.nav-item {
-  text-align: center;
+  color: #000;
   margin-left: 16px;
   padding-left: 16px;
+  text-align: center;
   border-left: 0.094rem solid #d9d9d9;
+  font: bold 1.188rem/1.5rem "Roboto Condensed", sans-serif;
 }
 
 li.nav-item:first-of-type {
   padding-left: 0;
   border: none;
-}
-
-.nav-item a {
-  color: #000;
-  font: bold 1.188rem/1.5rem "Roboto Condensed", sans-serif;
 }
 
 .nav-bar a:hover {
@@ -249,20 +252,20 @@ li.nav-item:first-of-type {
 }
 
 .search-box {
-  font-size: 1rem;
+  top: 0;
   width: 60px;
   height: 54px;
   position: absolute;
-  top: 0;
+  font-size: 1rem;
   right: 102px;
   border: none;
   outline: none;
-  vertical-align: middle;
+  transition: all 0.4s ease;
+  max-width: calc(100% - 102px);
 }
 
 .search-box:focus {
-  width: calc(100% - 102px);
-  transition: 0.4s;
+  width: 100%;
 }
 
 .search-box:focus::placeholder {
@@ -530,6 +533,7 @@ img {
 }
 
 section {
+  margin-top: 30px;
   padding-top: 10px;
   border-top: 1px solid #e6e6e6;
 }
@@ -540,7 +544,11 @@ section:first-of-type {
 
 .magazine-content img {
   width: 100%;
-  height: 100%;
+  height: 18vw;
+}
+
+.mag-first-img {
+  height: 24vw;  
 }
 
 .all-features {
