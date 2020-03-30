@@ -300,7 +300,7 @@ img {
   max-width: 100%;
 }
 
-article>img {
+article > img {
   width: 100%;
 }
 
@@ -528,7 +528,6 @@ article>img {
 }
 
 section {
-  margin-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -558,14 +557,14 @@ div.magazine-content img {
 }
 
 .n-title {
-  font: bold 19px/19px "Roboto Condensed",sans-serif;
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .section-title {
   color: #f72210;
-  font: bold 22px/22px "Roboto Condensed",sans-serif;
+  font: bold 22px/22px "Roboto Condensed", sans-serif;
 }
 
 .magazine-content article span:first-of-type {
