@@ -607,6 +607,10 @@ div.magazine-content img {
   height: 95px;
 }
 
+.bottom-article .block-title{
+  color: #f72210;
+}
+
 /* Subscribe */
 /* .signup-text::after {
   content: "";
