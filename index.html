@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Newsweek</title>
 		<link rel='icon' href='https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png' type='image/png'/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/genericons.css">
 		<link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
 					<li class="nav-item"><a class="nav-links" href="#">Weather</a></li>
 				</ul>
 				<form class="d-block ml-auto">
-					<span class="search-icon-wrap" for="search-box"></span>
+					<span class="search-icon-wrap"></span>
 					<input type="text" id="search-box" class="search-box" placeholder="Search">
 				</form>
 			</nav>
@@ -799,9 +799,9 @@
 				</section>
 			</main>
 		</div>
-		<footer class="container-fluid">
-			<div class="page-footer d-flex justify-content-between">
-				<div class="left-top-footer">
+		<footer class="container-fluid footer-section">
+			<div class="page-footer d-flex align-items-end justify-content-between">
+				<div class="left-footer d-flex align-items-end">
 					<a class="brand" href="#">
 						<svg x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
 							<g>
@@ -809,10 +809,22 @@
 							</g>
 						</svg>
 					</a>
+					<p class="legal">&copy; 2020 NEWSWEEK</p>
 				</div>
-				<div class="right-top-footer"></div>
+				<ul class="social list-unstyled d-flex align-items-end justify-content-between">
+					<li class="social-buttons"><a class="genericon genericon-facebook" href="#"></a></li>
+					<li class="social-buttons"><a class="genericon genericon-twitter" href="#"></a></li>
+					<li class="social-buttons"><a class="genericon genericon-instagram" href="#"></a></li>
+					<li class="social-buttons"><a class="genericon genericon-tumblr" href="#"></a></li>
+					<li class="social-buttons"><a class="genericon genericon-linkedin" href="#"></a></li>
+				</ul>
 			</div>
 			<div class="footer-links">	
+				<div class="footer-links-editions">
+					<label for="edition">
+						<strong class="editions">Editions:</strong>
+					</label>
+				</div>
 			</div>
 			</footer>
 		<script src="bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Genericons';
+  src: url('styles/genericons.css');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url('fonts/Genericons.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url('fonts/Genericons.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url('fonts/Genericons.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url('fonts/Genericons.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,6 +78,7 @@ a {
 .container,
 .container-fluid {
   max-width: 1310px;
+  margin: 0 auto;
   background-color: #fff;
 }
 
@@ -712,6 +748,16 @@ div.magazine-content img {
 }
 
 /* FOOTER */
+footer {
+  padding-top: 10px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.page-footer {
+  padding: 30px 30px 0 30px;
+  background-color: white;
+  position: relative;
+}
 
 .page-footer .brand svg {
   display: block;
@@ -722,7 +768,67 @@ div.magazine-content img {
   fill: #f72210;
 }
 
-.left-top-footer {
+.left-footer {
   display: flex;
   align-items: flex-end;
+}
+
+.page-footer .legal {
+  color: #666;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 12px;
+}
+
+.page-footer .social {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.genericon {
+  font-size: 26px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  font-family: "Genericons";
+  cursor: pointer;
+}
+
+.footer-section div a:hover {
+  text-decoration: none;
+}
+
+.social-button .genericon-facebook:hover {
+  color: #3b5998;
+}
+
+.social-button .genericon-twitter:hover {
+  color: #1da1f2;
+}
+
+.social-button .genericon-instagram:hover {
+  color: #405de6;
+}
+
+.social-button .genericon-tumblr:hover {
+  color: #35465c;
+}
+
+.social-button .genericon-linkedin:hover {
+  color: #0077b5;
+}
+
+.footer-section .footer-links {
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 30px 0 30px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-links .editions {
+  margin-top: 6px;
+  margin-right: 15px;
 }
