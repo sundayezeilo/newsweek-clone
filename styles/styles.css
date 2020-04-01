@@ -810,7 +810,7 @@ footer {
   color: #0077b5;
 }
 
-.footer-section .links-menu a:hover {
+.footer-section .links-menu .footer-link-item a:hover {
   text-decoration: none;
   color: #000;
 }
