@@ -687,6 +687,7 @@ div.cat-title {
 
 .subscribe-section .left-bottom .media {
   padding: 30px;
+  background-color: #f4f5f6;
 }
 
 .subscribe-section .right-bottom .media {
@@ -727,10 +728,6 @@ div.cat-title {
 
 .subscribe-section .block-title {
   color: #f72210;
-}
-
-.subscribe-section .left-bottom .media {
-  background-color: #f4f5f6;
 }
 
 .subscribe-section {
