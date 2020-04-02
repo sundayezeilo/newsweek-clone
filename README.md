@@ -31,7 +31,7 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ezeilo-su/newsweek-clone/issues).
+Feel free to check the [issues page](https://github.com/ezeilo-su/newsweek-clone/issues)
 
 ## Show your support
 
