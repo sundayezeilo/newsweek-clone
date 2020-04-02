@@ -340,13 +340,9 @@ nav {
 
 /* MAIN */
 
-main {
-  padding-top: 20px;
-}
-
 .cartoon,
 .featured-story,
-.top-story-article-1 {
+.top-story-article {
   padding-bottom: 20px;
 }
 
@@ -360,7 +356,7 @@ img {
   max-width: 100%;
 }
 
-article > img {
+article img {
   width: 100%;
 }
 
@@ -418,6 +414,11 @@ article > img {
   border: 1px solid #e6e6e6;
 }
 
+.more-stories {
+  top: -90%;
+  position: sticky;
+}
+
 .more-stories .media:first-of-type {
   padding-top: 0;
 }
@@ -449,10 +450,6 @@ article > img {
   margin-top: 4px;
   text-transform: uppercase;
   font: bold 0.875rem/1.313rem "Roboto Condensed", sans-serif;
-}
-
-.top-story-article-2 img {
-  margin-top: 0.75rem;
 }
 
 .card-body a:hover,
@@ -592,11 +589,6 @@ section {
   padding-top: 10px;
 }
 
-div.magazine-content img {
-  width: 100%;
-  height: 18vw;
-}
-
 .cat-title:hover {
   color: #f72210;
   text-decoration: none;
@@ -693,9 +685,8 @@ div.cat-title {
   padding: 15px;
 }
 
-.right-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.subscribe-section .left-bottom .media {
+  padding: 30px;
 }
 
 .subscribe-section .right-bottom .media {
@@ -713,7 +704,7 @@ div.cat-title {
 @media screen and (min-width: 992px) {
   .bottom-right-img-wrap {
     width: 48%;
-    height: 260px;
+    height: 295px;
   }
 }
 
