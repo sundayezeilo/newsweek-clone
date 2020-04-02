@@ -657,7 +657,7 @@ section {
 
 /* EDITOR'S PICK */
 
-div.cat-title {
+.slideshow-section .category-wrap .cat-title {
   width: 70px;
   height: 52px;
   display: flex;
