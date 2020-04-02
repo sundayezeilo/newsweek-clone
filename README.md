@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-["Newsweek Website Clone](https://raw.githack.com/ezeilo-su/newsweek-clone/dev/index.html)
+[Newsweek Website Clone](https://raw.githack.com/ezeilo-su/newsweek-clone/dev/index.html)
 
 ## Author
 
