@@ -378,10 +378,35 @@ article img {
   z-index: 1;
 }
 
+.card-body a:hover,
+.media-body a:hover,
+.cover-article-section a:hover {
+  color: #000;
+  text-decoration-color: #f72210;
+}
+
+.cat-title:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.card-title span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.category .cat-title:hover {
+  color: #f72210;
+}
+
 .sponsored-title {
   color: #3581f4;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.sponsored-article .sponsored-title:hover {
+  color: #3581f4;
 }
 
 .cover-right {
@@ -452,11 +477,14 @@ article img {
   font: bold 0.875rem/1.313rem "Roboto Condensed", sans-serif;
 }
 
-.card-body a:hover,
-.media-body a:hover,
-.cover-article-section a:hover {
-  color: #000;
-  text-decoration-color: #f72210;
+h3.section-title a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.side-article .media-body a:hover {
+  color: #f72210;
+  text-decoration: none;
 }
 
 .culture-and-travel .card-title {
@@ -467,15 +495,6 @@ article img {
   font: 0.938rem/1.25rem "Helvetica Neue", "Helvetica", Arial, sans-serif;
   color: rgba(39, 39, 39, 0.5);
   margin-bottom: 0.625rem;
-}
-
-.culture-and-travel a:hover {
-  text-decoration: none;
-}
-
-.opinion-links a:hover {
-  color: #f72210;
-  text-decoration: none;
 }
 
 .debate-item-1 {
@@ -507,12 +526,6 @@ article img {
 
 .by-farage-link {
   font-weight: bold;
-}
-
-.by-farage-link:hover,
-.debate-item-1 a:hover,
-.debate-item-2 a:hover {
-  text-decoration: none;
 }
 
 .by-line img {
@@ -578,14 +591,9 @@ article img {
 
 @media screen and (min-width: 768px) {
   .magazine-content .card-img-top {
-    height: 22vw;
+    height: 20vw;
     object-fit: cover;
   }
-}
-
-.card-title span a:hover {
-  color: inherit;
-  text-decoration: none;
 }
 
 .icon-n {
@@ -598,15 +606,6 @@ article img {
 
 section {
   padding-top: 10px;
-}
-
-.cat-title:hover {
-  color: #f72210;
-  text-decoration: none;
-}
-
-.magazine-content .cat-title:hover {
-  color: #f72210;
 }
 
 .all-features {
@@ -674,6 +673,7 @@ div.cat-title {
 .world-section .side-article img {
   width: 95px;
   height: 95px;
+  object-fit: cover;
 }
 
 .subscribe-section .media-body h3 {
